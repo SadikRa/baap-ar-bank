@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank money</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-7xl text-center mb-5">Let's go to some <span class="text-teal-400 font-bold">mooooooney!!</span></h1>
+
+
+    <section>
+        <div class="w-9/12 mx-auto grid grid-cols-3 gap-5">
+            <div class="bg-red-400 rounded-md p-8">
+                <h4 class="text-3xl">Deposit</h4>
+                <h2 class="text-7xl">$ <span id="deposite-total">00</span></h2>
+            </div>
+            <div class="bg-yellow-400 rounded-md p-8">
+                <h4 class="text-3xl">withdraw</h4>
+                <h2 class="text-7xl" >$ <span id="withdr-amaount">00</span></h2>
+            </div>
+            <div class="bg-blue-400 rounded-md p-8">
+                <h4 class="text-3xl">Blance</h4>
+                <h2 class="text-7xl">$ <span id="total-deposite-blance">1200</span></h2>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="w-9/12 mx-auto grid grid-cols-2 gap-5 mt-9">
+
+            <div class="bg-green-400 rounded-md p-8">
+                <h1>Please Deposit</h1>
+
+                <input id="amount-fild" type="text" placeholder="$ amount you want to deposite" class="w-9/12 block my-5 rounded-md">
+
+                <button class="bg-red-400 hover:bg-sky-700 px-5 py-3 rounded-md" id="deposite-botton">deposite</button>
+            </div>
+            <div class="bg-yellow-400 rounded-md p-8">
+                <h1>Please withdraw</h1>
+
+                <input type="text" id="deposite-fild" placeholder="$ amount you want to withdraw" class="w-9/12 block my-5 rounded-md">
+
+                <button class="bg-red-400 hover:bg-sky-700 px-5 py-3 rounded-md" id="withdraw-button">withdraw</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- js file  -->
+
+    <script src="deposite.js"></script>
+
+
+    <script src="withdrow.js"></script>
+</body>
+</html>
